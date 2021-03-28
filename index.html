@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form FCC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="survey-form">
+            <header class="header">
+                <h1 id="title" class="text-center">Autism understanding Survey Form.</h1>
+                <p id="description">Thank you for taking the time to participate in our survey</p>
+            </header>
+            <div class="form-grid">
+                <fieldset class="personal-type">
+                    <legend>Personal information?</legend>
+                    <div class="form-group">
+                        <label id="name-label" for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label id="email-label" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" required />
+                    </div>
+                    <div class="form-group">
+                        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                        <input type="number" name="age" id="number" min="10" max="99" placeholder="Age" />
+                    </div>
+                    <div class="form-group">
+                        <label id="gender-label">Gender</label>
+                        <div class="form-item">
+                            <input type="radio" id="radio-male" role="switch" value="male" name="gender" />
+                            <label for="radio-male">Male</label>
+                            <input type="radio" id="radio-female" role="switch" value="female" name="gender" />
+                            <label for="radio-female">Femal</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label id="name-label" for="dropdown">Which option best describes your current role?</label>
+                    <select id="dropdown" name="role" required>
+         <option disabled selected value>Select current role</option>
+         <option value="student">Parent/Caregiver</option>
+         <option value="job">Medical professional (MD, nurse)*</option>
+         <option value="learner">Educational personnel*</option>
+         <option value="preferNo">Licensed therapist (PhD, MSW, SLP)*</option>
+         <option value="other">Other (please specify)</option>
+         </select>
+                </div>
+
+                <fieldset class="personal-type">
+                    <legend>How many years of experience have you had with autism?</legend>
+                    <div class="form-group">
+                        <div class="form-item">
+                            <input type="radio" id="radio-none" value="none" name="experience" />
+                            <label for="radio-none">None</label>
+                            <input type="radio" id="radio-l2" value="&lt; 2" name="experience" />
+                            <label for="radio-l2">&lt; 2</label>
+                            <input type="radio" id="radio-2-5" value="2-5" name="experience" />
+                            <label for="radio-2-5">2-5 years</label>
+                            <input type="radio" id="radio-5+" value="5 + years" name="experience" />
+                            <label for="radio-5+">5 + years</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label id="name-label" for="dropdown-defAut">How well can you define Autism?</label>
+                    <select id="dropdown-defAut" name="mostLike" required>
+         <option disabled selected value>Select an option</option>
+         <option value="noIdea">I have no idea what autism is</option>
+         <option value="heardOf">I have heard of autism before</option>
+         <option value="understand">I understand autism a bit</option>
+         <option value="knowQuit">I know quite a lot about autism</option>
+         <option value="knowQuit">I could easily explain autism to anybody</option>
+         </select>
+                </div>
+
+                <fieldset class="personal-type">
+                    <legend>Is autism treatable/curable?</legend>
+                    <div class="form-group">
+                        <div class="form-item">
+                            <input type="radio" id="radio-yes" value="yes" name="treatable" />
+                            <label for="radio-yes">Yes</label>
+                            <input type="radio" id="radio-no" value="no" name="treatable" />
+                            <label for="radio-no">No</label>
+                            <input type="radio" id="radio-dn" value="dn" name="treatable" />
+                            <label for="radio-dn">Don't know</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="personal-type">
+                    <legend>How many disorders are on the autistic spectrum?</legend>
+                    <div class="form-group">
+                        <div class="form-item">
+                            <input type="radio" id="radio-3" value="3" name="disorders" />
+                            <label for="radio-3">3</label>
+                            <input type="radio" id="radio-4" value="4" name="disorders" />
+                            <label for="radio-4">4</label>
+                            <input type="radio" id="radio-5" value="5" name="disorders" />
+                            <label for="radio-5">5</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="personal-type">
+                    <legend>How would you treat a loved one with autism?</legend>
+                    <span class="clue">(you can check more than one box)</span>
+                    <div class="form-group">
+                        <div class="form-item">
+                            <input type="checkbox" id="chb-exactly" value="I would treat them exactly the same way as before I knew">
+                            <label for="chb-exactly">I would treat them exactly the same way as before I knew</label>
+                            <input type="checkbox" id="chb-care" value="I would treat them with as much care as possible">
+                            <label for="chb-care">I would treat them with as much care as possible</label>
+                            <input type="checkbox" id="chb-younger" value="I would treat them like a younger person">
+                            <label for="chb-younger">I would treat them like a younger person</label>
+                            <input type="checkbox" id="chb-always" value="I would pretend I had always known">
+                            <label for="chb-always">I would pretend I had always known</label>
+                            <input type="checkbox" id="chb-dont-know" value="I don't know">
+                            <label for="chb-dont-know">I don't know</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="personal-type">
+                    <legend>How many children have autism?</legend>
+                    <div class="form-group">
+                        <div class="form-item">
+                            <input type="radio" id="radio-1in20" role="switch" value="1in20" name="countAutism" />
+                            <label for="radio-1in20">1 in 20</label>
+                            <input type="radio" id="radio-1in60" role="switch" value="1in60" name="countAutism" />
+                            <label for="radio-1in60">1 in 60</label>
+                            <input type="radio" id="radio-1in100" role="switch" value="1in100" name="countAutism" />
+                            <label for="radio-1in100">1 in 100</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="personal-type">
+                    <legend>Do you believe enough is known about autism?</legend>
+                    <div class="form-group">
+                        <div class="form-item">
+                            <input type="radio" id="radio-known-yes" role="switch" value="yes" name="knownAutism" />
+                            <label for="radio-known-yes">Yes</label>
+                            <input type="radio" id="radio-known-no" role="switch" value="no" name="knownAutism" />
+                            <label for="radio-known-no">No</label>
+                            <input type="radio" id="radio-known-dn" role="switch" value="dn" name="knownAutism" />
+                            <label for="radio-known-dn">I don't know</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="personal-type">
+                    <legend>How many people have autism in the UK?</legend>
+                    <div class="form-group">
+                        <div class="form-item">
+                            <input type="radio" id="radio-200.000" role="switch" value="200000" name="countAutismUK" />
+                            <label for="radio-200.000">200.000</label>
+                            <input type="radio" id="radio-500.000" role="switch" value="500000" name="countAutismUK" />
+                            <label for="radio-500.000">500.000</label>
+                            <input type="radio" id="radio-700.000" role="switch" value="700000" name="countAutismUK" />
+                            <label for="radio-700.000">700.000</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="personal-type">
+                    <legend>How would you prefer to learn about autism?</legend>
+                    <div class="form-group">
+                        <div class="form-item">
+                            <input type="radio" id="research-on-my-own" role="switch" value="research on my own" name="preferLearn" />
+                            <label for="research-on-my-own">research on my own</label>
+                            <input type="radio" id="leaflets-written-info" role="switch" value="leaflets/written info" name="preferLearn" />
+                            <label for="leaflets-written-info">leaflets/written info</label>
+                            <input type="radio" id="presentation" role="switch" value="presentation" name="preferLearn" />
+                            <label for="presentation">presentation</label>
+                            <input type="radio" id="online-videos" role="switch" value="online videos" name="preferLearn" />
+                            <label for="online-videos">online videos</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="comments">Comment</label>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...">        
+           </textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+             Submit
+           </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizelegibility;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient( 20deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://newsatjama.files.wordpress.com/2014/05/istock_000015737399small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header {
+    background-color: rgba(230, 220, 207, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+}
+
+legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    font-size: 1.2rem;
+    font-style: bold;
+    font-weight: bold;
+}
+
+@media (min-width: 580px) {
+    form {
+        padding: 1.2rem;
+        background-color: rgba(230, 220, 207, 0.6);
+    }
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+#title,
+#description {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 1.00rem;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.personal-type {
+    margin: 20px auto;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ced4da;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    display: block;
+    height: 2.5rem;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    height: 120px;
+    rows: 50;
+    width: 100%;
+}
+
+input:focus+label,
+button:focus,
+textarea:focus,
+input:focus,
+select:focus {
+    outline: rgba(77, 97, 171, 1) auto 3px;
+    box-shadow: 2px 2px;
+}
+
+.form-group .form-item input[type="checkbox"],
+.form-group .form-item input[type="radio"] {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.form-group .form-item input[type="checkbox"]+label,
+.form-group .form-item input[type="radio"]+label {
+    position: relative;
+    padding: 7px 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    height: 3em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: rgba(228, 228, 228, 0.1);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center left 10px;
+    transition: 0.1s;
+    cursor: pointer
+}
+
+.form-group .form-item input[type="checkbox"]:checked+label,
+.form-group .form-item input[type="radio"]:checked+label {
+    padding-left: 36px;
+    border-color: rgba(32, 28, 31, 0.4);
+    background-color: rgba(32, 28, 31, 0.2);
+    background-image: url("https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/15516713191578982937-512.png");
+}
